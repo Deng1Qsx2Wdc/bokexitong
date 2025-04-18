@@ -3,14 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./src/style/styles.css">
     <title>Document</title>
 </head>
 <body>
-    <form method="post" action='http://localhost:8080'> 
-        <input type="text" name="userName"> 
-        <input type="password" name="userPwd"> 
-        <input type="submit" value="登录">
-    </form>
+    <div id="mac">
+        <div class="bg"></div>
+            <img src="/src/assets/主页.jpg">
+        <div>我的博客系统</div>
+        <form method="post" class="dl"  action='http://localhost:8080'> 
+            <label for="userName" class="bl1">账号 :</label>
+            <input type="text" id="text1" name="userName"> 
+            <label for="userPwd" class="bl2">密码 :</label>
+            <input type="password" id="password1" name="userPwd"> 
+            <button type="submit" class="but1" value="登录">登录</button>
+        </form>
+    </div>
     <script src="server.js"></script>
 
 </body>
